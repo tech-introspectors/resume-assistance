@@ -1,12 +1,6 @@
 import { useState } from 'react'
 
-const CustomHamburger = () => {
-  const [toggle, setToggle] = useState(false)
-
-  const handleToggle = () => {
-    setToggle(!toggle)
-  }
-
+const CustomHamburger = ({ toggle, handleToggle }: any) => {
   return (
     <button
       onClick={handleToggle}
