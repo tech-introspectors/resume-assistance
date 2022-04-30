@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply h-screen bg-gradient-radial;
+  }
+}
+
+@layer components {
+  .headerLink {
+    @apply cursor-pointer font-semibold text-brightTextColor transition duration-200 hover:text-primaryBlue;
+  }
+
+  .hamburger {
+    @apply cursor-pointer border-none bg-transparent outline-none;
+  }
+
+  .line {
+    @apply m-[7px] block h-[2px] w-[30px] rounded-[4px] bg-lightTextColor transition;
+  }
+
+  .hamburger.active .line:nth-child(1) {
+    @apply translate-y-[7px] rotate-45;
+  }
+
+  .hamburger.active .line:nth-child(2) {
+    @apply opacity-0;
+  }
+
+  .hamburger.active .line:nth-child(3) {
+    @apply -translate-y-[11px] -rotate-45;
+  }
+}
