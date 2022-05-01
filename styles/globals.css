@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply h-screen bg-gradient-radial;
+    @apply h-screen bg-gradient-radial !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-primaryBlue;
   }
 }
 
