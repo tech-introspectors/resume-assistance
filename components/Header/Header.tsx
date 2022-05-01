@@ -13,7 +13,7 @@ const Header = () => {
   }
 
   return (
-    <div className="fixed w-full py-3 px-4 shadow-lg shadow-primaryBlue md:py-4 md:px-7 lg:px-10">
+    <div className="supports-backdrop-blur:bg-white/95 fixed z-50 w-full bg-primaryDark/25 py-3 px-4 shadow-lg shadow-primaryBlue backdrop-blur-md md:py-4 md:px-7 lg:px-10">
       <div className="flex items-center justify-between">
         <div className={`flex items-center`}>
           <SVG_Logo customStyle="w-7 h-7 md:w-10 md:h-10" />
