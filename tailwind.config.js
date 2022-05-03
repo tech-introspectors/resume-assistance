@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+      },
+
       backgroundImage: {
         'gradient-radial':
           'radial-gradient(50% 50% at 50% 50%, rgba(11, 33, 54, 0.91) 0%, #080029 100%)',

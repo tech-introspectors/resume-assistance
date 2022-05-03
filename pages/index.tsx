@@ -9,8 +9,7 @@ const Home = () => {
         <title>Resume Assistance</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      <main className="mx-auto h-screen w-[93%] pt-36 text-white ">
+      <main className="mx-auto h-auto w-[93%] pt-36 text-white ">
         <div>
           <h1 className="text-4xl font-bold md:text-5xl">
             Create a Professional Resume for Free!
@@ -26,8 +25,12 @@ const Home = () => {
           <div className="justify-between md:flex">
             <AnimatedButton label="Get Started" customStyle="mt-11" />
 
-            <div className="relative mt-10 h-[200px] rounded-lg border-2 border-primaryBlue/25 bg-secondaryDark/75 p-5 backdrop-blur-md md:h-[450px] md:w-[70%]">
-              <img src="/images/resume-demo.png" alt="resume-demo" />
+            <div className="relative mt-10 md:w-[70%]">
+              <img
+                src="/images/resume_demo.svg"
+                className="pointer-events-none"
+                alt="resume-demo"
+              />
             </div>
           </div>
         </div>

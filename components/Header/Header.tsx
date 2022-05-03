@@ -3,7 +3,7 @@ import { SVG_Logo } from './SVG_Logo'
 import { BsGithub } from 'react-icons/bs'
 import CustomHamburger from './CustomHamburger'
 import { useState } from 'react'
-import CustomeBorder from '../CustomeBorder'
+import CustomBorder from '../CustomBorder'
 
 const Header = () => {
   const [toggle, setToggle] = useState(false)
@@ -13,7 +13,7 @@ const Header = () => {
   }
 
   return (
-    <div className="supports-backdrop-blur:bg-white/95 fixed z-50 w-full bg-primaryDark/25 py-3 px-4 shadow-lg shadow-primaryBlue backdrop-blur-md md:py-4 md:px-7 lg:px-10">
+    <div className="supports-backdrop-blur:bg-white/95 fixed z-50 w-full bg-primaryDark/70 py-3 px-4 shadow-lg shadow-primaryBlue backdrop-blur-md md:py-4 md:px-7 lg:px-10">
       <div className="flex items-center justify-between">
         <div className={`flex items-center`}>
           <SVG_Logo customStyle="w-7 h-7 md:w-10 md:h-10" />
@@ -63,7 +63,7 @@ const Header = () => {
         <CustomHamburger toggle={toggle} handleToggle={handleToggle} />
         <div
           className={`${
-            toggle ? 'translate-x-0' : '-translate-x-96'
+            toggle ? 'translate-x-0' : '-translate-x-[100%]'
           } absolute left-0 top-0 bottom-0 h-screen w-[70%] bg-secondaryDark  p-6 text-white transition duration-300 sm:w-[40%] md:hidden`}
         >
           <div className={`flex items-center`}>
@@ -78,7 +78,7 @@ const Header = () => {
               </a>
             </Link>
           </div>
-          <CustomeBorder customStyle="mt-5" />
+          <CustomBorder customStyle="mt-5" />
           <div className="mt-5 flex h-[90%] flex-col justify-between ">
             <div className="flex flex-col space-y-5">
               <Link href={'/resumetemplates'}>
@@ -101,7 +101,7 @@ const Header = () => {
             </div>
 
             <div className="py-4">
-              <CustomeBorder customStyle="mb-5" />
+              <CustomBorder customStyle="mb-5" />
               <Link
                 href={'https://github.com/tech-introspectors/resume-assistance'}
               >
