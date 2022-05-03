@@ -21,7 +21,7 @@ const Footer = () => {
           <p className="mt-5 text-lightTextColor">
             Build your resume instantly free!
           </p>
-          <div className="mt-2 flex">
+          <div className="mt-2 mb-5 flex md:mb-0">
             <SocialMediaIcon Icon={BsInstagram} />
             <SocialMediaIcon Icon={RiFacebookFill} />
             <SocialMediaIcon Icon={BsTwitter} />
@@ -47,15 +47,17 @@ const Footer = () => {
           )
         })}
       </div>
-      <CustomBorder customStyle="" />
-      <div className="py-7 px-5 md:px-0">
-        <div className="flex items-center justify-center gap-1">
-          <BiCopyright className="hidden text-lightTextColor sm:block" />
-          <p className=" text-center text-lightTextColor">
-            Developed by{' '}
-            <span className="text-primaryBlue">Team Introspectors</span>. All
-            rights reserved
-          </p>
+      <div className="px-5 md:px-0">
+        <CustomBorder customStyle="px-5" />
+        <div className="py-5 px-5 md:py-7 md:px-0">
+          <div className="flex items-center justify-center gap-1">
+            <BiCopyright className="hidden text-lightTextColor sm:block" />
+            <p className=" text-center text-lightTextColor">
+              Developed by{' '}
+              <span className="text-primaryBlue">Team Introspectors</span>. All
+              rights reserved
+            </p>
+          </div>
         </div>
       </div>
     </div>
