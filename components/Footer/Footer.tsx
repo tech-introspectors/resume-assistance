@@ -8,7 +8,7 @@ import CustomBorder from '../CustomBorder'
 
 const Footer = () => {
   return (
-    <div className="mx-auto mt-10 h-auto md:h-[45vh] md:w-[90%]">
+    <div className="mx-auto mt-10 h-auto w-full md:w-[90%]">
       <div className="h-full px-5 py-5 md:flex md:justify-between ">
         <div>
           <div className="flex items-center">
