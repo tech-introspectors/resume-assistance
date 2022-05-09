@@ -23,7 +23,7 @@ const Home = () => {
           </p>
 
           <div className="justify-between md:flex">
-            <AnimatedButton label="Get Started" customStyle="mt-11" />
+            <AnimatedButton label="Create Resume" customStyle="mt-11" />
 
             <div className="relative mt-10 md:w-[70%]">
               <img
